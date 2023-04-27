@@ -13,7 +13,13 @@ import test from '../assets/test.jpg';
   </head>
   <body>
     <h1>Astro</h1>
-    <Image {...test} format="webp" alt="just a test image" />
+    <Image
+      src={test.src}
+      width={test.width}
+      height={test.height}
+      format="webp"
+      alt="just a test image"
+    />
   </body>
 </html>
 
